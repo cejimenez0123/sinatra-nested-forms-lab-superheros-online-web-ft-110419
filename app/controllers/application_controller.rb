@@ -9,8 +9,9 @@ class App < Sinatra::Base
     end
     post '/teams' do
       @team =Team.new(parans[:team])
+      binding.pry
       @team_name = params[:team][:name]
-    binding.pry
+    
       erb :super_hero
     end
 
