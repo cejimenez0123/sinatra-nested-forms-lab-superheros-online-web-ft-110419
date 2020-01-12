@@ -12,7 +12,7 @@ class App < Sinatra::Base
       @team =Team.new(params[:team])
       @team_members = params[:team][:members].map { |member| Hero.new(member)}
 
-      erb :super_hero
+      erb :team
     end
 
 end
