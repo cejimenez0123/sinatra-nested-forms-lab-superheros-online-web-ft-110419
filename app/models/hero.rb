@@ -1,12 +1,12 @@
-class SuperHero
+class Hero
   attr_accessor :name, :power, :bio
     @@all = []
   def self.all
     @@all
   end
 
-  def initialize(opts={})
-    @name  = opts[:name]
+  def initialize(hash)
+    @name  = hash[:name]
     @power = opts[:power]
     @bio   = opts[:bio]
     self.save
