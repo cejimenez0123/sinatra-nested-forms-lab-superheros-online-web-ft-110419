@@ -7,8 +7,8 @@ class Hero
 
   def initialize(hash)
     @name  = hash[:name]
-    @power = opts[:power]
-    @bio   = opts[:bio]
+    @power = hash[:power]
+    @bio   = hash[:bio]
     self.save
   end
   def self.clear
