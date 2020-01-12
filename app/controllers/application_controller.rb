@@ -11,7 +11,7 @@ class App < Sinatra::Base
       binding.pry
       @team =Team.new(params[:team])
       @team_members = params[:team][:members].map { |member| Hero.new(member)}
-
+      @member1_power = params[:team][:members][1][:power]
       erb :superhero
     end
 end
