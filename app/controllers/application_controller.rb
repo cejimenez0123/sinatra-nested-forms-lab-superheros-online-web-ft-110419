@@ -11,7 +11,7 @@ class App < Sinatra::Base
       @team =Team.new(parans[:team])
       binding.pry
       @team_name = params[:team][:name]
-    
+
       erb :super_hero
     end
 
