@@ -3,3 +3,5 @@ class Team
   def initialize(hash)
     @name = hash[:name]
     @motto=hash[:motto]
+  end
+end
